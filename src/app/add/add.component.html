@@ -1,0 +1,313 @@
+<!-- <p>add works!</p> -->
+
+
+<div class="main-container">
+
+    
+
+    <label for="">Please fill the required data</label> 
+
+    <div class="input-fields">
+
+
+
+    <label for="amount">Enter the Amount: </label> 
+    <input  type="number" name="amount" id="amount" placeholder ="Your Amount" required autofocus  #data    >
+ 
+    <br>
+    <hr>
+
+
+    <label for="categorie">Enter the Category: </label>
+    <!-- <input type="text" placeholder="Your Category"      #category_value  > -->
+
+
+
+    <select id="cat" name="cat" placeholder="Your Category" #category_value>
+        <option value="">select category</option>
+        <option value="Family">Family</option>
+        <option value="Needy">Needy</option>
+        <option value="Enjoyment">Enjoyment</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Investment">Investment</option>
+      </select>
+
+    <br>
+    <hr>
+
+    <label for="">Enter the Description: </label>
+    <input type="text" pattern="[A-Za-z]{50}" placeholder="Your Description" #des>
+
+    <br>
+    <hr>
+
+    <label for="Date">Enter your Date: </label>
+    <input type="date" name="date" id="date"           #date>
+
+    <br>
+
+
+
+
+
+
+    <button     (click)="onclick(data, date, category_value , des)"      class=" btn btn-success ">Add</button>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<br>
+<hr>
+
+
+
+
+
+
+
+    <table class="table table-light mt -3">
+
+        <thead class="thead-light">
+    
+            <tr>
+                <th>
+                    Amount
+                </th>
+                <th>
+                    Date
+                </th>
+                <th>
+                    Category
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Remove Expense
+                </th>
+                <th>
+                    Update Expense
+                </th>
+            </tr>
+    
+    
+    
+    
+        </thead>
+    
+    
+    
+        <tbody       >
+    
+    
+           
+
+
+            
+
+
+
+
+
+                <tr>
+
+                    
+                    <td   *ngFor="let i of Expense_data"  >
+    
+    
+                        {{i}}
+    
+                    </td>
+
+
+
+
+
+
+
+                    <td   *ngFor="let item of Date"   >
+    
+    
+                        {{item}}
+    
+                    </td>
+
+
+
+
+
+
+
+                    <td    *ngFor="let items of Category"   >
+    
+    
+                        {{items}}
+    
+                    </td>
+
+
+
+
+
+
+
+                    <td    *ngFor="let c of Description"   >
+    
+    
+                        {{c}}
+    
+                    </td>
+
+
+
+
+
+
+
+
+
+                    <td>
+
+                        <button (click)="remove(data, date, category_value)" btn btn-danger>Remove</button>
+                    </td>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <td>
+
+                        <button (click)="edit(data, date, category_value)" btn btn-danger>Edit</button>
+                    </td>
+
+
+    
+                    
+    
+    
+    
+    
+    
+    
+    
+                </tr>
+
+
+
+
+
+
+
+
+
+            
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+            
+            
+
+
+            
+    
+    
+    
+    
+    
+    
+    
+    
+        </tbody>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </table>
+    
+
+    
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

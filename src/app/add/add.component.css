@@ -1,0 +1,12 @@
+.main-container{
+    text-align: center;
+    width: auto;
+    margin: 0 550px 0 550px;
+    border: 2px #39A7FF inset;
+
+    border-radius: 40px;
+}
+
+.input-fields{
+    margin: 20px;
+}

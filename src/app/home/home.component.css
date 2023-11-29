@@ -1,0 +1,33 @@
+.header{
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+
+.search{
+    text-align: center;
+    margin: 50px 600px 0 600px;
+    
+    
+}
+
+
+.container{
+    text-align: center;
+    padding: 70px;
+}
+
+.menu{
+    background-color:#20a39e;
+    color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 40px;
+    border:  5px rgb(244, 235, 235);
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
